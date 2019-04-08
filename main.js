@@ -39,6 +39,8 @@
      
        // crear la funncion con un if si en el input se escribe un numero que indique si esta mayor o menor que el random number que indique en el feedback si es mayor o menor que el random number
 
+       //llamar la funccion del contador en la funccion acierta el numero random
+
  function aciertaElNumeroRandom (){
     
 

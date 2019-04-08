@@ -32,32 +32,28 @@
       }
       
       console.log(getRandomNumber(100));
-     
+    
      
       
        // crear una funccion para que indique los intnentos y indicarlos en el inner.html del p para intentos
-
      
        // crear la funncion con un if si en el input se escribe un numero que indique si esta mayor o menor que el random number que indique en el feedback si es mayor o menor que el random number
 
  function aciertaElNumeroRandom (){
+    
+
     if (inputElem.value > getRandomNumber(100)){
         feedEackElem.innerHTML ='demasiado alto';
-    }
+   }
     else if(inputElem.value < getRandomNumber(100)){
         feedEackElem.innerHTML ='demasiado bajo';
     }
     else if (inputElem.value === getRandomNumber(100)){
         feedEackElem.innerHTML ='has acertado campeona';
-    }
+    } 
  };
  
 
     // crear el listener para el boton prueba
 
     buttonElem.addEventListener('click', aciertaElNumeroRandom);
-
-
-//poner css segun ej ejemplo
-
-    

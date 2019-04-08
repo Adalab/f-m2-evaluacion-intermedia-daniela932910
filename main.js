@@ -31,9 +31,12 @@
         return Math.ceil(Math.random() * max);
       }
       
-      console.log(getRandomNumber(100));
     
-     
+     const randomNumber = getRandomNumber(100);
+
+     console.log(randomNumber);
+
+     let counter = 0;
       
        // crear una funccion para que indique los intnentos y indicarlos en el inner.html del p para intentos
      
@@ -42,17 +45,21 @@
        //llamar la funccion del contador en la funccion acierta el numero random
 
  function aciertaElNumeroRandom (){
-    
+    const userNumber = parseInt(inputElem.value);
 
-    if (inputElem.value > getRandomNumber(100)){
+    if (userNumber > randomNumber){
         feedEackElem.innerHTML ='demasiado alto';
    }
-    else if(inputElem.value < getRandomNumber(100)){
+    else if(userNumber < randomNumber){
         feedEackElem.innerHTML ='demasiado bajo';
     }
-    else if (inputElem.value === getRandomNumber(100)){
+    else if (userNumber === randomNumber){
         feedEackElem.innerHTML ='has acertado campeona';
     } 
+
+/* counter += 1
+
+counter.innerHTML = counter; */
  };
  
 

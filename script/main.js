@@ -16,7 +16,7 @@
 
     // recojer el boton prueba
 
-    const buttonElem = document.querySelector('.button__prueba');
+    const buttonElem = document.querySelector('.button__try');
 
     // recojer el elemento feedback
 
@@ -36,13 +36,14 @@
 
      console.log(randomNumber);
 
+     // declarar el contador a 0
+
      let counter = 0;
       
        // crear una funccion para que indique los intnentos y indicarlos en el inner.html del p para intentos
      
        // crear la funncion con un if si en el input se escribe un numero que indique si esta mayor o menor que el random number que indique en el feedback si es mayor o menor que el random number
 
-       //llamar la funccion del contador en la funccion acierta el numero random
 
  function aciertaElNumeroRandom (){
     const userNumber = parseInt(inputElem.value);
@@ -56,10 +57,12 @@
     else if (userNumber === randomNumber){
         feedEackElem.innerHTML ='has acertado campeona';
     } 
+//sumearle al counter +1 cada vez que se pulse el boton
+    counter += 1
 
-/* counter += 1
+//pintar en html dentro del span, el valor del counter
 
-counter.innerHTML = counter; */
+    countElem.innerHTML = counter; 
  };
  
 
